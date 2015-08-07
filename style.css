@@ -36,3 +36,8 @@ html, body {
 .ngGrid.unselectable {
   margin-top: 10px;
 }
+
+.search {
+    margin-left: 100%;
+}
+

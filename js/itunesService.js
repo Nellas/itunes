@@ -15,9 +15,11 @@ app.service('itunesService', function($http, $q){
                     AlbumArt: result.data.results[i].artworkUrl60,
                     Artist: result.data.results[i].artistName,
                     Collection: result.data.results[i].collectionName,
+                    SongPrice: result.data.results[i].trackPrice,
                     CollectionPrice: result.data.results[i].collectionPrice,
                     Play: result.data.results[i].previewUrl,
-                    Type: result.data.results[i].kind
+                    Type: result.data.results[i].kind,
+                    SongTitle: result.data.results[i].trackName
                 });
             }
             dfd.resolve(songDataArr);
